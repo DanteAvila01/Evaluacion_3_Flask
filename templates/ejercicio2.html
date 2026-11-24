@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block titulo %}Ejercicio 2{% endblock %}
+
+{% block contenido %}
+<section class="tarjeta">
+    <h1>Formulario de nombres</h1>
+
+    {% if error %}
+        <p class="error" role="alert">{{ error }}</p>
+    {% endif %}
+
+    <form method="post" action="{{ url_for('ejercicio2') }}">
+        {% for numero in range(1, 4) %}
+            <label for="nombre{{ numero }}">Nombre {{ numero }}</label>
+            <input id="nombre{{ numero }}" name="nombre{{ numero }}"
+                   type="text" value="{{ nombres[numero - 1] }}" required>
+        {% endfor %}
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p><a href="{{ url_for('inicio') }}">Volver al menú</a></p>
+</section>
+{% endblock %}

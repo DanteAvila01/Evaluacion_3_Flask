@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    background: #f2f2f2;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    width: min(90%, 640px);
+    margin: 5rem auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.boton {
+    padding: 1.5rem 2rem;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.boton-uno {
+    background: #713b93;
+}
+
+.boton-dos {
+    background: #287544;
+}
+
+.boton:hover {
+    text-decoration: underline;
+}
+
+.boton:focus-visible {
+    outline: 3px solid #222;
+    outline-offset: 4px;
+}
+.tarjeta {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 8px #0002;
+}
+
+.tarjeta form {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.tarjeta input,
+.tarjeta button {
+    padding: 0.6rem;
+    font: inherit;
+    border-radius: 4px;
+}
+
+.tarjeta input {
+    border: 1px solid #767676;
+}
+
+.tarjeta button {
+    justify-self: start;
+    margin-top: 0.5rem;
+    border: 0;
+    background: #1557a5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tarjeta dt {
+    font-weight: bold;
+}
+
+.tarjeta dd {
+    margin: 0.25rem 0 0.8rem;
+}
+
+.error {
+    color: #a61b1b;
+}
